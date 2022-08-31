@@ -1,10 +1,24 @@
 import React from 'react';
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Support from "./components/Support";
 
 const App = () => {
+    let Component
+
+    switch (window.location.pathname) {
+        case "/":
+            Component = Home
+            break
+        case "/support":
+            Component = Support
+            break
+    }
     return (
-        <div>
-            <h1>Hello World</h1>
-        </div>
+        <>
+            <Navbar />
+            <Component />
+        </>
     )
 }
 
