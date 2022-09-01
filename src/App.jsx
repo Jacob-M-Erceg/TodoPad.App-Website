@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Support from "./components/Support";
+import Support from "./components/support/Support";
 
 const App = () => {
     let Component
