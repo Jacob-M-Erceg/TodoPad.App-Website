@@ -15,3 +15,30 @@
     font-weight: 400;
     cursor: pointer;
 }
+
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (min-width: 560px) and (max-width: 850px) {
+    .nav-download-button {
+        width: 14rem;
+        height: 4.4rem;
+        border-radius: 8.5rem;
+    }
+
+    .nav-download-button label {
+        font-size: 2.1rem;
+    }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 559px) {
+    .nav-download-button {
+        width: 12rem;
+        height: 4.4rem;
+        border-radius: 8.5rem;
+    }
+
+    .nav-download-button label {
+        font-size: 1.8rem;
+    }
+}

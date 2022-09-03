@@ -15,7 +15,7 @@ const App = () => {
             Component = Home
             break
 
-        case "/terms-and_conditions":
+        case "/terms-and-conditions":
             Component = TermsAndConditions
             break
 

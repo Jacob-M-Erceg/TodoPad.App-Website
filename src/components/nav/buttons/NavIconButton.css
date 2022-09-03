@@ -21,3 +21,15 @@
     font-weight: 600;
     padding-left: 1.2rem;
 }
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 559px) {
+    .nav-icon-button-img {
+        height: 4.0rem;
+    }
+
+    .nav-icon-button-text {
+        font-size: 2.2rem;
+        padding-left: 0.8rem;
+    }
+}
