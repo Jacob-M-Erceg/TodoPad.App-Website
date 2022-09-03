@@ -1,0 +1,17 @@
+.nav-download-button {
+    width: 19.1rem;
+    height: 4.4rem;
+    border-radius: 8.5rem;
+    border: none;
+    background-color: #1773df;
+    cursor: pointer;
+    outline: none;
+}
+
+.nav-download-button label {
+    color: white;
+    font-size: 2.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
