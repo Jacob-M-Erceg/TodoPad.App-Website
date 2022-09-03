@@ -1,16 +1,22 @@
 import React from 'react';
-import iPhone_SS from '../../../assets/home-clay-1Comp-900px.png';
-import icon from '../../../assets/todopad-icon.png';
 import './home.css';
+import MainActionButton from "./buttons/MainActionButton";
+import iPhone_SS from '../../../assets/home-clay-1Comp-900px.png';
+import App_Store_Badge from '../../../assets/app-store-badge.svg';
 
 const Home = () => {
     return (
         <div className="homepage">
-            <h1>Level up your life</h1>
-            <h3>Track daily tasks. Reach your goals.</h3>
-            {/*<button>Start Winning Now</button>*/}
-            {/*<img src={iPhone_SS} style={{ height: 500 }} />*/}
-            {/*<img src={icon} />*/}
+
+            <div className="labels-and-button">
+                <label className="main-label">Level up your life</label>
+                <label className="sub-label">Track daily tasks. Reach your goals.</label>
+                <MainActionButton />
+            </div>
+
+            <img className="iPhone-screenshot"  src={iPhone_SS} />
+
+            <img className="app-store-badge" src={App_Store_Badge} />
         </div>
     )
 }

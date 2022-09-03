@@ -1,0 +1,33 @@
+.main-action-button {
+    height: 8.0rem;
+    width: 32.0rem;
+    border-radius: 0.8rem;
+    border: none;
+    background: rgb(34,170,246);
+    background: linear-gradient(90deg, rgba(34,170,246,1) 23%, rgba(109,85,255,1) 100%);
+    cursor: pointer;
+    outline: none;
+}
+
+.main-action-button label {
+    color: white;
+    font-size: 2.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 559px) {
+    .main-action-button {
+        height: 5.9rem;
+        width: 23.1rem;
+        border-radius: 0.8rem;
+    }
+
+    .main-action-button label {
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+}
