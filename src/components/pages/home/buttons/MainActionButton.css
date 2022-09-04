@@ -16,18 +16,3 @@
     font-weight: 400;
     cursor: pointer;
 }
-
-
-/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 559px) {
-    .main-action-button {
-        height: 5.9rem;
-        width: 23.1rem;
-        border-radius: 0.8rem;
-    }
-
-    .main-action-button label {
-        font-size: 2.2rem;
-        font-weight: 400;
-    }
-}

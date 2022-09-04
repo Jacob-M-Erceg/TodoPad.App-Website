@@ -9,7 +9,7 @@ const MainActionButton = () => {
     return (
         <button className="main-action-button" onClick={onClick}>
             <label>
-                Start Winning Now
+                Start Now
             </label>
         </button>
     )

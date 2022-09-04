@@ -2,11 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*box-sizing: border-box;*/
     margin: 0;
     padding: 0;
-    height: calc(100vh - 7.4rem);
-    /*position: relative;*/
+    min-height: calc(100vh - 7.4rem);
 
     background: rgb(6,121,255);
     background: linear-gradient(135deg, rgba(6,121,255,0) 0%, rgba(6,121,255,0.21) 29%, rgba(72,156,255,0.52) 100%);
@@ -41,8 +39,185 @@
 }
 
 .homepage .app-store-badge {
-
     position: fixed;
     bottom: 1.5%;
     right: 1.5%;
+    cursor: pointer;
+}
+
+/* ================ MEDIA QUERIES (MAX 1190px) ================= */
+@media screen and (max-width: 1190px) {
+
+    .homepage .main-label {
+        font-size: 7.2rem;
+    }
+
+    .homepage .sub-label {
+        font-size: 3rem;
+    }
+}
+
+/* ================ MEDIA QUERIES (MAX 1050px) ================= */
+@media screen and (max-width: 1050px) {
+
+    .homepage .labels-and-button {
+        gap: 4.5rem;
+    }
+
+    .homepage .main-label {
+        font-size: 6rem;
+    }
+
+    .homepage .sub-label {
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* ================ MOBILE AND TABLET VERTICAL FLEXBOX UNDER 950px ================= */
+/* ================ MEDIA QUERIES (MAX 950px) ================= */
+@media screen and (max-width: 950px) {
+
+    .homepage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8.3rem;
+        gap: unset;
+    }
+
+    .homepage .labels-and-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: unset;
+        gap: unset;
+    }
+
+    .homepage .main-label {
+        font-size: 7.2rem;
+    }
+
+    .homepage .sub-label {
+        margin-top: 3.7rem;
+        font-size: 2.8rem;
+        margin-bottom: unset;
+    }
+
+    .homepage .main-action-button {
+        margin-top: 7.6rem;
+        margin-bottom: 7.6rem;
+    }
+
+    .homepage .iPhone-screenshot {
+        height: unset;
+        width: 37.2rem;
+        margin: unset;
+    }
+
+    .homepage .app-store-badge {
+        position: unset;
+        height: 7rem;
+        margin-top: 4.5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/* ================ MEDIA QUERIES (MAX 559px) ================= */
+@media screen and (max-width: 559px) {
+
+    .homepage {
+        padding-top: 6rem;
+    }
+
+    .homepage .main-label {
+        font-size: 5.8rem;
+    }
+
+    .homepage .sub-label {
+        font-size: 3.4rem;
+        white-space: pre;
+        line-height: 4.5rem;
+    }
+
+    .homepage .main-action-button {
+        margin-top: 7.2rem;
+        margin-bottom: 7rem;
+    }
+
+    .homepage .app-store-badge {
+        position: unset;
+        height: 7rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .homepage ul {
+        padding: 0;
+        margin: 0 0 3.8rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .homepage li {
+        margin-top: 2rem;
+    }
+
+    .homepage a {
+        font-size: 2.2rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .homepage .light-links {
+        color: #877979;
+    }
+
+    .homepage .dark-links {
+        color: black;
+    }
+}
+
+
+/* ================ MEDIA QUERIES (MAX 460px) ================= */
+@media screen and (max-width: 460px) {
+
+    .homepage {
+        padding-top: 7rem;
+    }
+
+    .homepage .main-label {
+        font-size: 4.5rem;
+    }
+
+    .homepage .sub-label {
+        font-size: 3rem;
+        white-space: pre;
+        line-height: 4rem;
+    }
+
+    /* Main action button */
+    .homepage .main-action-button {
+        margin-top: 7rem;
+        margin-bottom: 6rem;
+        height: 6.8rem;
+        width: 26.6rem;
+    }
+
+    .homepage .main-action-button label {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    .homepage .iPhone-screenshot {
+        height: unset;
+        width: 29.5rem;
+        margin: unset;
+    }
 }

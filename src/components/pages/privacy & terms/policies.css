@@ -2,6 +2,11 @@
     padding: 2% 15%;
     background: rgb(6,121,255);
     background: linear-gradient(135deg, rgba(6,121,255,0) 0%, rgba(6,121,255,0.21) 29%, rgba(72,156,255,0.52) 100%);
+    /*height: calc(100vh - 7.4rem);*/
+    min-height: calc(100vh - 7.4rem);
+    /*height: 200%;*/
+    /*background-size: cover;*/
+    /*background-position: center, center;*/
 }
 
 strong {
