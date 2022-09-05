@@ -1,0 +1,25 @@
+.back-to-home-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+}
+
+.back-to-home-button .back-to-home-button-icon {
+    height: 3.1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.back-to-home-button .back-to-home-button-label {
+    font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #0D69D6;
+    cursor: pointer;
+}
