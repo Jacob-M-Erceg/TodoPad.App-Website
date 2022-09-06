@@ -42,16 +42,16 @@ const Support = () => {
                 <form className="support-form" ref={form} onSubmit={sendEmail}>
                     <ul>
                         <li>
-                            <input type="text" name='name' placeholder='Name' required />
+                            <input className="support-form-fields" type="text" name='name' placeholder='Name' required />
                         </li>
                         <li>
-                            <input type="email" name='email' placeholder='Email' required />
+                            <input className="support-form-fields" type="email" name='email' placeholder='Email' required />
                         </li>
                         <li>
-                            <input type="email" name='confirm-email' placeholder='Confirm Email' required />
+                            <input className="support-form-fields" type="email" name='confirm-email' placeholder='Confirm Email' required />
                         </li>
                         <li>
-                            <textarea name="message" rows="7" placeholder='What we can help you with' required ></textarea>
+                            <textarea className="support-form-fields" name="message" placeholder='What we can help you with' required ></textarea>
                         </li>
                         <li>
                             <button type='submit' className='support-form-primary-button'>Send Message</button>
