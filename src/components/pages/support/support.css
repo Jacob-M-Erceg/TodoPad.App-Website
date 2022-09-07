@@ -15,6 +15,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    gap: 0.8rem;
     min-width: 35%;
     max-width: 40%;
 }
@@ -35,17 +36,17 @@
     font-weight: 500;
 }
 
+.support-form-container {
+    min-width: 40%;
+    max-width: 50%;
+}
+
 .support-form {
     background-color: white;
     border-radius: 1.7rem;
     border-color: #B0B0B0;
     border-style: solid;
     border-width: 0.1rem;
-
-    /* Todo - Change*/
-    max-height: calc(90vh - 7.4rem);
-    min-width: 40%;
-    max-width: 50%;
 }
 
 .support-form ul {
@@ -72,11 +73,72 @@
 }
 
 .support-form input {
-    min-height: 1rem;
     height: 6.6rem;
 }
 
 .support-form textarea {
-    min-height: 1rem;
-    height: 16rem;
+    height: 20rem;
+}
+
+.support-form-primary-button {
+    width: 19.1rem;
+    max-width: 100%;
+    height: 4.4rem;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: #1773df;
+    cursor: pointer;
+    outline: none;
+
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+/* ================ MOBILE AND TABLET VERTICAL FLEXBOX UNDER 950px ================= */
+/* ================ MEDIA QUERIES (MAX 700) ================= */
+@media screen and (max-width: 700px) {
+    .support-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 7.4rem);
+        background: rgb(6,121,255);
+        background: linear-gradient(135deg, rgba(6,121,255,0) 0%, rgba(6,121,255,0.21) 29%, rgba(72,156,255,0.52) 100%);
+
+        /*padding: 3.8rem 0rem 3.8rem 0rem;*/
+        gap: 4rem;
+    }
+
+    .left-hand-info-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        min-width: 80%;
+        max-width: 80%;
+    }
+
+    .left-hand-info-panel .page-title-label {
+        text-align: center;
+    }
+
+    .left-hand-info-panel .page-info-label {
+        text-align: center;
+    }
+
+    .support-form-container {
+        min-width: 85%;
+        max-width: 90%;
+    }
+
+    .support-form ul {
+        padding: 2rem 1rem 2rem 1rem;
+        gap: 2rem;
+    }
 }
